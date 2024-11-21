@@ -1,9 +1,4 @@
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Portfolio website is ready!");
+    // Add interactive animations or scroll-based effects here
 });
