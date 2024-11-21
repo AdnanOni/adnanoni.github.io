@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Adnan Oni</title>
+    <title>Adnan Oni - Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">Adnan Oni</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h2>🛠️ Projects</h2>
-        <ul>
-            <li><strong>Power Automate Flows:</strong> Automating leave requests with Power Automate. <a href="#">View Details</a></li>
-            <li><strong>System Administration Tools:</strong> Scripts for Active Directory and system monitoring.</li>
-            <li><strong>Cybersecurity Scripts:</strong> Tools for incident response and threat analysis.</li>
-            <li><strong>Network Management:</strong> Meraki device management with Intune and Defender integration.</li>
-        </ul>
-    </div>
+    <section class="container">
+        <h1>My Projects</h1>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Automation Flows</h3>
+                <p>Automated leave requests via Power Automate integrated with Microsoft tools.</p>
+            </div>
+            <div class="project">
+                <h3>Cybersecurity Tools</h3>
+                <p>Python scripts for threat mitigation, log analysis, and incident response.</p>
+            </div>
+            <div class="project">
+                <h3>Network Management</h3>
+                <p>Developed scripts for Meraki device monitoring and integration with Intune.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2024 Adnan Oni</p>
+        <p>© 2024 Adnan Oni | Built with ❤️</p>
     </footer>
 </body>
 </html>

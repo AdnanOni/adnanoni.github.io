@@ -1,1 +1,101 @@
-/* Shared styles are already inlined above for body, nav, and container */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background: linear-gradient(135deg, #0d47a1, #1e88e5);
+    overflow-x: hidden;
+}
+
+/* Header and Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('assets/images/hero-bg.jpg') no-repeat center/cover;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+}
+.hero h1 span {
+    color: #00c2ff;
+}
+.hero .cta-btn {
+    background: #00c2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #00c2ff;
+}
