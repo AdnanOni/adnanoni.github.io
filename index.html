@@ -8,18 +8,62 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 800px;
-            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
             color: #333;
+            background: linear-gradient(135deg, #0d47a1, #1e88e5, #64b5f6);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
         }
-        h1, h2, h3 {
-            color: #444;
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
         h1 {
             text-align: center;
             color: #0073e6;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #0073e6;
+            display: inline-block;
+            margin-bottom: 10px;
         }
         a {
             color: #0073e6;
@@ -28,88 +72,33 @@
         a:hover {
             text-decoration: underline;
         }
-        ul {
-            padding-left: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section-header {
-            font-size: 1.4rem;
-            border-bottom: 2px solid #0073e6;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .badge {
-            background-color: #0073e6;
-            color: white;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            vertical-align: middle;
-        }
         footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
             text-align: center;
-            color: #555;
+            padding: 10px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Adnan Oni</h1>
-    <p>Welcome to my portfolio! 🎉</p>
-    <p>Here, you'll find a showcase of my work, including scripts, projects, and tools developed for system administration, cybersecurity, automation, and more.</p>
-
-    <div class="section">
-        <h2 class="section-header">🚀 About Me</h2>
-        <p>I am a <span class="badge">System Administrator</span> and <span class="badge">Python Developer</span> with expertise in:</p>
+    <nav>
         <ul>
-            <li><strong>System Administration:</strong> Managing networks, configuring systems, and ensuring operational efficiency.</li>
-            <li><strong>Cybersecurity:</strong> Implementing robust security protocols to safeguard organizational assets.</li>
-            <li><strong>Automation:</strong> Utilizing tools like Power Automate and custom scripts to simplify workflows and boost productivity.</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        <p>My organization leverages <strong>Intune</strong>, <strong>Defender</strong>, and <strong>Meraki</strong> for secure and efficient network management, and I actively contribute to optimizing these environments.</p>
-    </div>
+    </nav>
 
-    <div class="section">
-        <h2 class="section-header">🛠️ Projects</h2>
-        <ul>
-            <li><strong>Power Automate Flows:</strong> Automating leave requests, including email notifications to supervisors via Power Automate. <a href="#link-to-project-folder-or-doc">View project details</a>.</li>
-            <li><strong>System Administration Tools:</strong> Python scripts for Active Directory management and tools for monitoring system health.</li>
-            <li><strong>Cybersecurity Scripts:</strong> Incident response tools to detect and mitigate threats, log analysis, and reporting.</li>
-            <li><strong>Network Management:</strong> Scripts for configuring and monitoring Meraki devices, with integrations for Intune and Defender.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2 class="section-header">🛠️ Tools and Technologies</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, PowerShell, Bash</li>
-            <li><strong>Frameworks:</strong> Power Automate, Microsoft Graph API</li>
-            <li><strong>Platforms:</strong> Microsoft Intune, Defender, Meraki, DarkTrace, Azure</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2 class="section-header">🔗 Get in Touch</h2>
-        <ul>
-            <li><strong>GitHub:</strong> <a href="https://github.com/AdnanOni">GitHub Profile</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adnan-oni-48452b172/">LinkedIn Profile</a></li>
-            <li><strong>Email:</strong> <a href="mailto:adnan_oni@yahoo.com">Email Me</a></li>
-        </ul>
-        <p>Feel free to explore, use, and contribute to any of the projects here. Feedback and suggestions are always welcome!</p>
-    </div>
-
-
-
-    <div class="section">
-        <h2 class="section-header">🛡️ Security</h2>
-        <p>If you discover a security vulnerability in one of the projects, please reach out via <a href="mailto:your-email@example.com">email</a>.</p>
+    <div class="container">
+        <h1>Adnan Oni</h1>
+        <p>Welcome to my portfolio! 🎉</p>
+        <p>Here, you'll find a showcase of my work, including scripts, projects, and tools developed for system administration, cybersecurity, automation, and more.</p>
     </div>
 
     <footer>
-        <p>© 2024 Adnan Oni.</p>
+        <p>© 2024 Adnan Oni | Built with ❤️</p>
     </footer>
 </body>
 </html>
