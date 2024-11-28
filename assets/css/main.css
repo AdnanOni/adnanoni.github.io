@@ -3998,26 +3998,48 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 	.certifications {
-    text-align: center;
-    margin-top: 50px;
     padding: 20px;
+    background-color: #f9f9f9; /* Optional background color */
 }
 
-.certifications h2 {
-    font-size: 1.8rem;
+.certification-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between panes */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Spacing between panes */
+}
+
+.certification-image {
+    flex: 1; /* Take up 50% of the width */
+    text-align: center; /* Center the image */
+}
+
+.certification-image img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.certification-content {
+    flex: 1; /* Take up 50% of the width */
+    text-align: left;
+}
+
+.certification-content h2 {
     margin-bottom: 20px;
     color: #0073e6; /* Optional: Adjust to match your theme */
 }
 
 .cert-logo-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between logos */
+    flex-wrap: wrap; /* Wrap logos if needed */
+    gap: 15px; /* Space between logos */
+    justify-content: flex-start; /* Align logos to the left */
 }
 
 .cert-logo {
-    width: 100px; /* Adjust size as needed */
+    width: 80px; /* Adjust as necessary */
     height: auto;
     transition: transform 0.3s ease;
 }
